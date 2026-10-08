@@ -1,0 +1,18 @@
+dataset_id,feature,count
+GSE206785,adjacent_normal,24
+GSE206785,tumor,24
+GSE270678,location:Core,17
+GSE270678,location:Edge,17
+GSE270678,location:In-between,38
+GSE270678,stage:Stage I,6
+GSE270678,stage:Stage II,22
+GSE270678,stage:Stage III,44
+GSE270678,subtype:Diffuse,19
+GSE270678,subtype:Indeterminate,24
+GSE270678,subtype:Intestinal,29
+GSE315928,baseline,33
+GSE315928,followup_1,33
+GSE315928,followup_2,28
+GSE229379,library:TCR,6
+GSE229379,library:mRNA,6
+GSE229379,antibiotics_pool:pooled_used_2_not_used_2,12

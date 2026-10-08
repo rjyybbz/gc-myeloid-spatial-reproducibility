@@ -1,0 +1,107 @@
+{
+  "dataset_id": "GSE251950",
+  "analysis_module": "external_spatial_validation",
+  "n_samples": 10,
+  "n_primary": 9,
+  "n_peritoneal": 1,
+  "n_spots_in_tissue": 32290,
+  "correlation_summary": [
+    {
+      "metric_x": "suppressive_program_score",
+      "metric_y": "caf_myeloid_input_score",
+      "n_samples": 10,
+      "median_delta": 0.24167901074703557,
+      "pvalue": 0.001953125,
+      "mean_rho": 0.27254762907878083
+    },
+    {
+      "metric_x": "suppressive_program_score",
+      "metric_y": "caf_activation_score",
+      "n_samples": 10,
+      "median_delta": 0.39621472629980914,
+      "pvalue": 0.001953125,
+      "mean_rho": 0.4076682927061216
+    },
+    {
+      "metric_x": "suppressive_program_score",
+      "metric_y": "tls_chemokine_score",
+      "n_samples": 10,
+      "median_delta": 0.1148197037023977,
+      "pvalue": 0.005859375,
+      "mean_rho": 0.09983941325917886
+    },
+    {
+      "metric_x": "suppressive_program_score",
+      "metric_y": "tls_bcell_fdc_score",
+      "n_samples": 10,
+      "median_delta": 0.03609127608944558,
+      "pvalue": 0.556640625,
+      "mean_rho": 0.025351563959859852
+    }
+  ],
+  "neighbor_summary": [
+    {
+      "target_flag": "high_caf_activation",
+      "n_samples": 10,
+      "median_delta": 0.2509188193357531,
+      "pvalue": 0.001953125,
+      "mean_delta": 0.2541694416724609
+    },
+    {
+      "target_flag": "high_tls_chemokine",
+      "n_samples": 10,
+      "median_delta": 0.08350722189773295,
+      "pvalue": 0.083984375,
+      "mean_delta": 0.08794429483697895
+    },
+    {
+      "target_flag": "high_tls_bcell_fdc",
+      "n_samples": 10,
+      "median_delta": 0.07671879359296276,
+      "pvalue": 0.130859375,
+      "mean_delta": 0.04449599941906228
+    }
+  ],
+  "gc6_pair_sample_summary": [
+    {
+      "sample_id": "GSM7990478",
+      "sample_title": "GC6",
+      "tissue_group": "primary_tumor",
+      "pair_id": "GC6",
+      "n_spots_in_tissue": 2426,
+      "suppressive_program_mean": 0.8807992805536674,
+      "trajectory_axis_mean": 0.34819259113110895,
+      "caf_activation_mean": 0.7263707226928513,
+      "caf_input_mean": 0.1683574329407384,
+      "tls_chemokine_mean": -0.004605722952339177,
+      "tls_bcell_fdc_mean": -0.009280981807337914
+    },
+    {
+      "sample_id": "GSM7990479",
+      "sample_title": "GC6-PM",
+      "tissue_group": "peritoneal_met",
+      "pair_id": "GC6",
+      "n_spots_in_tissue": 2483,
+      "suppressive_program_mean": 0.7592567644845062,
+      "trajectory_axis_mean": 0.3209086264670762,
+      "caf_activation_mean": 0.9746257768499657,
+      "caf_input_mean": 0.17476624711437794,
+      "tls_chemokine_mean": 0.03929798162722161,
+      "tls_bcell_fdc_mean": 0.052033455416986264
+    }
+  ],
+  "gc6_pair_delta_peritoneal_minus_primary": {
+    "suppressive_program_mean": -0.12154251606916122,
+    "trajectory_axis_mean": -0.027283964664032767,
+    "caf_activation_mean": 0.24825505415711435,
+    "caf_input_mean": 0.006408814173639532,
+    "tls_chemokine_mean": 0.04390370457956079,
+    "tls_bcell_fdc_mean": 0.06131443722432418
+  },
+  "interpretation": [
+    "GSE251950 provides an independent external spatial validation layer for the CAF-rich suppressive niche.",
+    "Across samples, suppressive-program scores reproducibly couple with CAF activation and CAF-myeloid input features, supporting external stromal coupling of the program.",
+    "TLS-related signals are weak-to-null rather than externally reproducing a clean TLS-core exclusion pattern in this cohort, so the TLS-exclusion claim should remain anchored in GSE270678.",
+    "The GC6 versus GC6-PM pair provides a spatially matched supportive peritoneal extension, but should be framed as paired supportive evidence rather than a cohort-level metastasis test."
+  ]
+}

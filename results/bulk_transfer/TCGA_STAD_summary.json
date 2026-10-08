@@ -1,0 +1,185 @@
+{
+  "dataset_id": "TCGA_STAD",
+  "n_samples_total": 412,
+  "n_samples_survival": 407,
+  "n_samples_adjusted_model": 404,
+  "n_signature_genes": 34,
+  "n_signature_genes_available": 33,
+  "available_signature_genes": [
+    "GPX1",
+    "PSAP",
+    "CSTB",
+    "CTSB",
+    "CTSC",
+    "CTSD",
+    "NPC2",
+    "PLD3",
+    "CD68",
+    "PRDX1",
+    "PLA2G7",
+    "S100A11",
+    "FABP5",
+    "MS4A7",
+    "FTL",
+    "GPNMB",
+    "ACP5",
+    "GRN",
+    "LIPA",
+    "LGALS3",
+    "CD63",
+    "CTSA",
+    "LGALS1",
+    "APOC1",
+    "TREM2",
+    "C1QA",
+    "C1QB",
+    "APOE",
+    "SOD2",
+    "C1QC",
+    "ATP6V1F",
+    "TYROBP",
+    "ANXA5"
+  ],
+  "score_mean": -1.8108492052138475e-16,
+  "score_std": 0.5282651591563915,
+  "score_median": -0.12023848325549637,
+  "death_vs_alive_mannwhitney_p": 0.25229775001015686,
+  "death_group_mean_scores": {
+    "alive": -0.031514069839044964,
+    "dead": 0.05014502936653019
+  },
+  "high_low_logrank": {
+    "statistic": 1.2161519564651648,
+    "p_value": 0.270117156189129,
+    "high_group_n": 206,
+    "low_group_n": 201,
+    "high_group_60m_survival": 0.3500022719644762,
+    "low_group_60m_survival": 0.3781374668686509
+  },
+  "cox_univariate": [
+    {
+      "term": "signature_score_std",
+      "coef": 0.15372508168084514,
+      "se": 0.07384067770139673,
+      "hazard_ratio": 1.166170241142236,
+      "ci95_lower": 1.0090379512364742,
+      "ci95_upper": 1.3477719343055987,
+      "p_value": 0.03735633785219876
+    }
+  ],
+  "cox_adjusted": [
+    {
+      "term": "C(SEX)[T.Male]",
+      "coef": 0.07922474408390359,
+      "se": 0.17904544800511507,
+      "hazard_ratio": 1.0824475684223402,
+      "ci95_lower": 0.7620795487904477,
+      "ci95_upper": 1.537494006030101,
+      "p_value": 0.658139013683906
+    },
+    {
+      "term": "C(broad_stage)[T.Stage II]",
+      "coef": 0.40129811041471924,
+      "se": 0.3386285231323338,
+      "hazard_ratio": 1.4937625082921921,
+      "ci95_lower": 0.769192669822653,
+      "ci95_upper": 2.900868038295063,
+      "p_value": 0.23599023074623038
+    },
+    {
+      "term": "C(broad_stage)[T.Stage III]",
+      "coef": 0.9546351803305706,
+      "se": 0.3128812173380019,
+      "hazard_ratio": 2.5977227096884175,
+      "ci95_lower": 1.4068990038406664,
+      "ci95_upper": 4.796480243435566,
+      "p_value": 0.002279966183555949
+    },
+    {
+      "term": "C(broad_stage)[T.Stage IV]",
+      "coef": 1.7041427566097602,
+      "se": 0.3633346957185033,
+      "hazard_ratio": 5.496671661524908,
+      "ci95_lower": 2.696640537709105,
+      "ci95_upper": 11.204088543546993,
+      "p_value": 2.7282666624778263e-06
+    },
+    {
+      "term": "signature_score_std",
+      "coef": 0.1372146209419199,
+      "se": 0.08234121048554904,
+      "hazard_ratio": 1.147074308272428,
+      "ci95_lower": 0.9761157028338924,
+      "ci95_upper": 1.3479749018263443,
+      "p_value": 0.0956308029240029
+    },
+    {
+      "term": "age",
+      "coef": 0.03212048851700647,
+      "se": 0.008464789488011961,
+      "hazard_ratio": 1.0326419193031944,
+      "ci95_lower": 1.0156507104503445,
+      "ci95_upper": 1.0499173805819133,
+      "p_value": 0.00014788178943419219
+    }
+  ],
+  "subtype_kruskal": {
+    "statistic": 14.103449254028646,
+    "p_value": 0.006972103410692352
+  },
+  "spearman_with_msi_sensor": {
+    "rho": -0.11337965476689255,
+    "p_value": 0.02166658892605215
+  },
+  "spearman_with_tmb": {
+    "rho": -0.03491464582404276,
+    "p_value": 0.4813339679504536
+  },
+  "ebv_vs_non_ebv": {
+    "p_value": 0.0004293418643279057,
+    "ebv_mean_score": 0.42108062046889955,
+    "non_ebv_mean_score": -0.033069158675568214
+  },
+  "subtype_summary": [
+    {
+      "SUBTYPE": "STAD_EBV",
+      "n_samples": 30,
+      "mean_score": 0.4210806204688995,
+      "median_score": 0.3365507359880989,
+      "mean_msi_sensor": 0.12633333333333333,
+      "mean_tmb": 5.124444444433333
+    },
+    {
+      "SUBTYPE": "STAD_POLE",
+      "n_samples": 7,
+      "mean_score": 0.11979745268500827,
+      "median_score": 0.10862870595348785,
+      "mean_msi_sensor": 0.33999999999999997,
+      "mean_tmb": 41.57619047528572
+    },
+    {
+      "SUBTYPE": "STAD_GS",
+      "n_samples": 50,
+      "mean_score": -0.028942506288793756,
+      "median_score": -0.2407931971064064,
+      "mean_msi_sensor": 0.0348,
+      "mean_tmb": 2.5679999999799996
+    },
+    {
+      "SUBTYPE": "STAD_MSI",
+      "n_samples": 73,
+      "mean_score": -0.029451606489072295,
+      "median_score": -0.12257086120580822,
+      "mean_msi_sensor": 24.05178082191781,
+      "mean_tmb": 47.60228310534247
+    },
+    {
+      "SUBTYPE": "STAD_CIN",
+      "n_samples": 223,
+      "mean_score": -0.04669176479547454,
+      "median_score": -0.1294917284291904,
+      "mean_msi_sensor": 0.21121076233183858,
+      "mean_tmb": 4.101943198811659
+    }
+  ]
+}

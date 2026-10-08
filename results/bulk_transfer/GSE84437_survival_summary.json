@@ -1,0 +1,153 @@
+{
+  "dataset_id": "GSE84437",
+  "n_samples_total": 483,
+  "n_samples_survival": 433,
+  "n_samples_adjusted_model": 433,
+  "n_signature_genes": 34,
+  "n_signature_genes_available": 33,
+  "available_signature_genes": [
+    "GPX1",
+    "PSAP",
+    "CSTB",
+    "CTSB",
+    "CTSC",
+    "CTSD",
+    "NPC2",
+    "PLD3",
+    "CD68",
+    "PRDX1",
+    "PLA2G7",
+    "S100A11",
+    "FABP5",
+    "MS4A7",
+    "FTL",
+    "GPNMB",
+    "ACP5",
+    "GRN",
+    "LIPA",
+    "LGALS3",
+    "CD63",
+    "CTSA",
+    "LGALS1",
+    "APOC1",
+    "TREM2",
+    "C1QA",
+    "C1QB",
+    "APOE",
+    "SOD2",
+    "C1QC",
+    "ATP6V1F",
+    "TYROBP",
+    "ANXA5"
+  ],
+  "score_mean": -2.9422059451763985e-17,
+  "score_std": 0.6757127353684647,
+  "score_median": 0.05500326709299379,
+  "death_vs_alive_mannwhitney_p": 0.9984670485201503,
+  "death_group_mean_scores": {
+    "alive": 0.20460687321853424,
+    "dead": 0.15001319249166178
+  },
+  "high_low_logrank": {
+    "statistic": 0.4058403173503009,
+    "p_value": 0.5240883826975812,
+    "high_group_n": 242,
+    "low_group_n": 191,
+    "high_group_60m_survival": 0.5715540678963179,
+    "low_group_60m_survival": 0.6172236903976038
+  },
+  "cox_univariate": [
+    {
+      "term": "signature_score_std",
+      "coef": -0.09146041853489843,
+      "se": 0.10305828092277476,
+      "hazard_ratio": 0.9125974373807604,
+      "ci95_lower": 0.7456830394617782,
+      "ci95_upper": 1.1168741122435304,
+      "p_value": 0.3748296395448426
+    }
+  ],
+  "cox_adjusted": [
+    {
+      "term": "C(sex)[T.male]",
+      "coef": 0.15787428860848182,
+      "se": 0.15683629746897862,
+      "hazard_ratio": 1.1710189750294229,
+      "ci95_lower": 0.861117035180035,
+      "ci95_upper": 1.5924495554686866,
+      "p_value": 0.31411823235781167
+    },
+    {
+      "term": "C(ptstage)[T.T2]",
+      "coef": -0.27523590037959444,
+      "se": 0.8095824326586893,
+      "hazard_ratio": 0.759392961005819,
+      "ci95_lower": 0.1553588823517146,
+      "ci95_upper": 3.7119066544238737,
+      "p_value": 0.7338771103229286
+    },
+    {
+      "term": "C(ptstage)[T.T3]",
+      "coef": 0.5387830581031343,
+      "se": 0.7357047184107142,
+      "hazard_ratio": 1.7139198516817797,
+      "ci95_lower": 0.4052714497954595,
+      "ci95_upper": 7.248280774457369,
+      "p_value": 0.46396350525273045
+    },
+    {
+      "term": "C(ptstage)[T.T4]",
+      "coef": 0.9833515383707365,
+      "se": 0.723220851589945,
+      "hazard_ratio": 2.6734012506582525,
+      "ci95_lower": 0.6478077357494687,
+      "ci95_upper": 11.032709016283107,
+      "p_value": 0.17393006689561286
+    },
+    {
+      "term": "C(pnstage)[T.N1]",
+      "coef": 0.40105575772149327,
+      "se": 0.22918505806647668,
+      "hazard_ratio": 1.493400534789666,
+      "ci95_lower": 0.9529937285555301,
+      "ci95_upper": 2.340251662191401,
+      "p_value": 0.08013193765749396
+    },
+    {
+      "term": "C(pnstage)[T.N2]",
+      "coef": 0.9431108202788239,
+      "se": 0.23010202016802012,
+      "hazard_ratio": 2.5679574600227983,
+      "ci95_lower": 1.635765451337695,
+      "ci95_upper": 4.031388186548368,
+      "p_value": 4.155421129105902e-05
+    },
+    {
+      "term": "C(pnstage)[T.N3]",
+      "coef": 1.1319682693890651,
+      "se": 0.29314395628233647,
+      "hazard_ratio": 3.1017555864063513,
+      "ci95_lower": 1.746137341672765,
+      "ci95_upper": 5.509811564184514,
+      "p_value": 0.00011270421450448793
+    },
+    {
+      "term": "signature_score_std",
+      "coef": -0.124208491658718,
+      "se": 0.10515310257616707,
+      "hazard_ratio": 0.8831956827528312,
+      "ci95_lower": 0.7187019274120537,
+      "ci95_upper": 1.0853381412820702,
+      "p_value": 0.2375170610208892
+    },
+    {
+      "term": "age",
+      "coef": 0.02211231045486736,
+      "se": 0.006362633190795629,
+      "hazard_ratio": 1.0223585995822055,
+      "ci95_lower": 1.0096881788779843,
+      "ci95_upper": 1.0351880194350553,
+      "p_value": 0.0005102071977033307
+    }
+  ]
+}

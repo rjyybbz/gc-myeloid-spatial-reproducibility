@@ -1,0 +1,10 @@
+metric,description,n_peritoneum_tumor_samples,n_stomach_tumor_samples,median_peritoneum_tumor,median_stomach_tumor,mean_peritoneum_tumor,mean_stomach_tumor,mann_whitney_p_two_sided,primary_inference_level
+receptor_switch_score,Per-sample mean receptor-switching score,3,26,1.0041469379409378,0.1218772994183614,0.9552417062557813,0.19152323976432048,0.003831417624521073,sample
+early_like_fraction_within_sample,Early-like state fraction,3,26,0.2907348242811501,0.1344288793103448,0.2791128477764093,0.21365218238395017,0.38861521620142303,sample
+intermediate_like_fraction_within_sample,Intermediate-like state fraction,3,26,0.3177570093457944,0.46103731992923536,0.3367831599831764,0.46906738885280763,0.1297208538587849,sample
+suppressive_like_fraction_within_sample,Terminal-like suppressive-like state fraction,3,26,0.4249201277955272,0.31947274865561226,0.38410399224041414,0.31728042876324214,0.4718117131910235,sample
+terminal_to_early_ratio,Terminal-like-to-early-like cell-count ratio with 0.5 pseudocount,3,26,1.459016393442623,2.1849437773966076,2.524885181188177,5.808574359672292,0.6102900930487136,sample
+log2_terminal_to_early_ratio,log2 terminal-like-to-early-like ratio,3,26,0.5449960934035115,1.1252635617912876,0.6736988255142052,1.1103684909119755,0.6102900930487136,sample
+terminal_receptor_switch_index,Terminal-state receptor-switching index,3,26,0.926245126012244,-0.13939278624130325,0.9787133202624204,-0.11292846003027932,0.04542966611932129,sample
+suppressive_program_score,Per-sample mean suppressive-program score,3,26,0.9999813712690256,1.025997148179945,1.0846617549288882,1.0417222967633046,0.659551176792556,sample
+trajectory_axis_score,Per-sample mean trajectory-axis score,3,26,0.5602562323197539,0.45846945091663516,0.7964985788470722,0.2793511879605048,0.7613574165298302,sample

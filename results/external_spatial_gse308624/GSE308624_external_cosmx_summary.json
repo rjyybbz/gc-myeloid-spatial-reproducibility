@@ -1,0 +1,136 @@
+{
+  "dataset_id": "GSE308624",
+  "analysis_module": "external_cosmx_validation",
+  "n_cells": 200182,
+  "n_samples": 71,
+  "cell_type_counts": {
+    "Cancer_cell": 97689,
+    "Fibroblast": 34686,
+    "B_cell": 26144,
+    "T_cell": 15958,
+    "Mocrophage": 12697,
+    "Endothelial": 7766,
+    "SMC": 4710,
+    "DC": 532
+  },
+  "genes_available": {
+    "suppressive_program_genes": [
+      "GPX1",
+      "PSAP",
+      "CSTB",
+      "CTSD",
+      "PLD3",
+      "CD68",
+      "FABP5",
+      "GPNMB",
+      "ACP5",
+      "LGALS3",
+      "CD63",
+      "LGALS1",
+      "APOC1",
+      "C1QA",
+      "C1QB",
+      "APOE",
+      "SOD2",
+      "C1QC",
+      "TYROBP"
+    ],
+    "caf_activation_genes": [
+      "COL1A1",
+      "COL1A2",
+      "COL3A1",
+      "COL11A1",
+      "FAP",
+      "INHBA",
+      "TAGLN"
+    ],
+    "caf_input_genes": [
+      "CCL2",
+      "CXCL12",
+      "CSF1",
+      "IL34",
+      "TGFB1",
+      "INHBA"
+    ],
+    "tls_bcell_genes": [
+      "CCL19",
+      "CCL21",
+      "CXCL13",
+      "LTB",
+      "MS4A1",
+      "CD79A"
+    ]
+  },
+  "sample_correlations": [
+    {
+      "metric_x": "macrophage_suppressive_mean",
+      "metric_y": "fibroblast_caf_activation_mean",
+      "n_samples": 71,
+      "rho": 0.42686116700201204,
+      "pvalue": 0.0002054200740783057
+    },
+    {
+      "metric_x": "macrophage_suppressive_mean",
+      "metric_y": "fibroblast_caf_input_mean",
+      "n_samples": 71,
+      "rho": -0.10432595573440642,
+      "pvalue": 0.38658409832735485
+    },
+    {
+      "metric_x": "macrophage_suppressive_mean",
+      "metric_y": "bcell_tls_mean",
+      "n_samples": 71,
+      "rho": -0.1929090619539789,
+      "pvalue": 0.10700377902161301
+    },
+    {
+      "metric_x": "macrophage_suppressive_mean",
+      "metric_y": "fibroblast_fraction",
+      "n_samples": 71,
+      "rho": 0.2447686116700201,
+      "pvalue": 0.03966164548197833
+    },
+    {
+      "metric_x": "macrophage_suppressive_mean",
+      "metric_y": "bcell_fraction",
+      "n_samples": 71,
+      "rho": -0.09852448021462104,
+      "pvalue": 0.4136782667293968
+    }
+  ],
+  "neighbor_summary": [
+    {
+      "target_flag": "is_bcell",
+      "n_samples": 54,
+      "median_delta": -0.0177475947934352,
+      "pvalue": 5.2448565281694034e-06,
+      "mean_delta": -0.0381779093380319
+    },
+    {
+      "target_flag": "is_fibroblast",
+      "n_samples": 54,
+      "median_delta": 0.010576923076923067,
+      "pvalue": 0.03035172371909199,
+      "mean_delta": 0.02002218801315446
+    },
+    {
+      "target_flag": "is_high_caf_fibro",
+      "n_samples": 54,
+      "median_delta": 0.004135338345864666,
+      "pvalue": 0.0062936809660174755,
+      "mean_delta": 0.01093048200733464
+    },
+    {
+      "target_flag": "is_high_tls_bcell",
+      "n_samples": 54,
+      "median_delta": -0.01238244514106583,
+      "pvalue": 5.600397025699862e-06,
+      "mean_delta": -0.027568845160812042
+    }
+  ],
+  "interpretation": [
+    "GSE308624 provides an independent external cell-resolved spatial validation layer for the CAF-coupled suppressive macrophage niche.",
+    "Across samples, macrophage suppressive burden tracks fibroblast CAF activation, and high-suppressive macrophages are surrounded by more fibroblast and high-CAF fibroblast neighbors.",
+    "At the same time, high-suppressive macrophages show fewer nearby B cells and fewer nearby TLS-like high B-cell neighbors, supporting an external lymphoid-exclusion layer at cellular neighborhood resolution."
+  ]
+}

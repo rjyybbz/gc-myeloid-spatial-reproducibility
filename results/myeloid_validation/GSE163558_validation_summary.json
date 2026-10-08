@@ -1,0 +1,52 @@
+{
+  "dataset_id": "GSE163558",
+  "shape": [
+    54687,
+    24946
+  ],
+  "program_gene_count_available": 33,
+  "myeloid_clusters": [
+    "3",
+    "10",
+    "11",
+    "21"
+  ],
+  "top_tissue_groups_by_program_mean": [
+    {
+      "tissue_group": "ovary_met",
+      "count": 614,
+      "mean": 1.1148246797890142,
+      "median": 0.9107898517802997
+    },
+    {
+      "tissue_group": "peritoneal_met",
+      "count": 1244,
+      "mean": 0.8605890043626824,
+      "median": 0.5533330350806623
+    },
+    {
+      "tissue_group": "primary_tumor",
+      "count": 4075,
+      "mean": 0.6233380614671961,
+      "median": 0.39983266613858964
+    },
+    {
+      "tissue_group": "lymph_node_met",
+      "count": 356,
+      "mean": 0.5257392688418367,
+      "median": 0.37094826369614275
+    },
+    {
+      "tissue_group": "adjacent_normal",
+      "count": 88,
+      "mean": 0.37988464083950313,
+      "median": 0.24323118173635444
+    },
+    {
+      "tissue_group": "liver_met",
+      "count": 1838,
+      "mean": 0.1674193252595079,
+      "median": 0.11966521939237316
+    }
+  ]
+}

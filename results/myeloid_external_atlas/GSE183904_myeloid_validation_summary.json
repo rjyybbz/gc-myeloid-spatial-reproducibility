@@ -1,0 +1,254 @@
+{
+  "dataset_id": "GSE183904",
+  "shape": [
+    158641,
+    125
+  ],
+  "myeloid_like_cells": 18551,
+  "early_cluster": "0",
+  "suppressive_clusters": [
+    "1",
+    "4"
+  ],
+  "top_cluster_scores": [
+    {
+      "leiden": "1",
+      "suppressive_program_score": 2.2730295763140416,
+      "early_module_score": -0.7355086418193878,
+      "late_module_score": 2.3883359766665797,
+      "suppressive_axis_score": 3.1238446184859674,
+      "late_regulator_score": -0.9274028462171767,
+      "receptor_switch_score": 0.8988852663537473
+    },
+    {
+      "leiden": "4",
+      "suppressive_program_score": 0.9397594511733826,
+      "early_module_score": -0.14706964972960768,
+      "late_module_score": 1.7993659909744215,
+      "suppressive_axis_score": 1.946435640704029,
+      "late_regulator_score": -0.783680559989808,
+      "receptor_switch_score": 0.48405228327776534
+    },
+    {
+      "leiden": "2",
+      "suppressive_program_score": 1.9275964469737688,
+      "early_module_score": 0.38310334060471046,
+      "late_module_score": 1.6791823167984803,
+      "suppressive_axis_score": 1.29607897619377,
+      "late_regulator_score": -1.022237845124505,
+      "receptor_switch_score": -0.07384751660120886
+    },
+    {
+      "leiden": "8",
+      "suppressive_program_score": 1.4824825165229705,
+      "early_module_score": 0.1629811543345635,
+      "late_module_score": 1.2882154885939678,
+      "suppressive_axis_score": 1.1252343342594044,
+      "late_regulator_score": -0.8349426736494507,
+      "receptor_switch_score": 0.425150621659828
+    },
+    {
+      "leiden": "9",
+      "suppressive_program_score": 1.5403838178608007,
+      "early_module_score": 0.23235494986217026,
+      "late_module_score": 1.3078550519597745,
+      "suppressive_axis_score": 1.0755001020976043,
+      "late_regulator_score": -1.2213069105017496,
+      "receptor_switch_score": 0.16564102207191686
+    }
+  ],
+  "primary_tumor_vs_normal_tests": [
+    {
+      "metric": "myeloid_fraction",
+      "group_col": "disease_group",
+      "group_a": "normal",
+      "group_b": "tumor",
+      "n_group_a": 10,
+      "n_group_b": 26,
+      "median_group_a": 0.06255652595020533,
+      "median_group_b": 0.0972534078031593,
+      "u_statistic": 81.0,
+      "pvalue": 0.08672163749228091
+    },
+    {
+      "metric": "early_cluster_fraction",
+      "group_col": "disease_group",
+      "group_a": "normal",
+      "group_b": "tumor",
+      "n_group_a": 10,
+      "n_group_b": 26,
+      "median_group_a": 0.07926369576143408,
+      "median_group_b": 0.13442887931034483,
+      "u_statistic": 93.0,
+      "pvalue": 0.1973536835561095
+    },
+    {
+      "metric": "mean_myeloid_axis",
+      "group_col": "disease_group",
+      "group_a": "normal",
+      "group_b": "tumor",
+      "n_group_a": 10,
+      "n_group_b": 26,
+      "median_group_a": 0.741118948363547,
+      "median_group_b": 0.45846945091663516,
+      "u_statistic": 165.0,
+      "pvalue": 0.22303759590429784
+    },
+    {
+      "metric": "mean_myeloid_program",
+      "group_col": "disease_group",
+      "group_a": "normal",
+      "group_b": "tumor",
+      "n_group_a": 10,
+      "n_group_b": 26,
+      "median_group_a": 0.9175952614456399,
+      "median_group_b": 1.025997148179945,
+      "u_statistic": 108.0,
+      "pvalue": 0.44764368588154513
+    },
+    {
+      "metric": "mean_myeloid_late_module",
+      "group_col": "disease_group",
+      "group_a": "normal",
+      "group_b": "tumor",
+      "n_group_a": 10,
+      "n_group_b": 26,
+      "median_group_a": 0.9008002932382131,
+      "median_group_b": 0.8843194075213358,
+      "u_statistic": 144.0,
+      "pvalue": 0.6335040697673531
+    },
+    {
+      "metric": "suppressive_cluster_fraction",
+      "group_col": "disease_group",
+      "group_a": "normal",
+      "group_b": "tumor",
+      "n_group_a": 10,
+      "n_group_b": 26,
+      "median_group_a": 0.32697049232482306,
+      "median_group_b": 0.3194727486556123,
+      "u_statistic": 143.0,
+      "pvalue": 0.6588640171930575
+    }
+  ],
+  "tissue_cluster_burden": [
+    {
+      "tissue_group": "peritoneum_tumor",
+      "n_myeloid": 905,
+      "early_cluster_fraction": 0.2022099447513812,
+      "suppressive_cluster_fraction": 0.4430939226519337,
+      "median_axis_score": 1.7719098085030875,
+      "median_program_score": 1.0755778312251771
+    },
+    {
+      "tissue_group": "stomach_normal",
+      "n_myeloid": 2292,
+      "early_cluster_fraction": 0.11736474694589878,
+      "suppressive_cluster_fraction": 0.3136998254799302,
+      "median_axis_score": 0.43975453677967535,
+      "median_program_score": 0.7598498123148241
+    },
+    {
+      "tissue_group": "stomach_tumor",
+      "n_myeloid": 15269,
+      "early_cluster_fraction": 0.19916170017682888,
+      "suppressive_cluster_fraction": 0.2772938633833257,
+      "median_axis_score": 0.21922480030347757,
+      "median_program_score": 1.075895839986193
+    },
+    {
+      "tissue_group": "peritoneum_normal",
+      "n_myeloid": 85,
+      "early_cluster_fraction": 0.1411764705882353,
+      "suppressive_cluster_fraction": 0.023529411764705882,
+      "median_axis_score": -3.395742680764346,
+      "median_program_score": -0.09377836091978853
+    }
+  ],
+  "top_tissue_groups_by_axis_mean": [
+    {
+      "tissue_group": "peritoneum_tumor",
+      "suppressive_program_score_count": 905,
+      "suppressive_program_score_mean": 1.1410220257693926,
+      "suppressive_program_score_median": 1.0755778312251771,
+      "early_module_score_count": 905,
+      "early_module_score_mean": 0.19283522108585963,
+      "early_module_score_median": -0.16462859137583585,
+      "late_module_score_count": 905,
+      "late_module_score_mean": 1.5231091821556113,
+      "late_module_score_median": 1.645622040795498,
+      "suppressive_axis_score_count": 905,
+      "suppressive_axis_score_mean": 1.3302739610697516,
+      "suppressive_axis_score_median": 1.7719098085030875,
+      "late_regulator_score_count": 905,
+      "late_regulator_score_mean": -0.8875274214823601,
+      "late_regulator_score_median": -0.8792006174723306,
+      "receptor_switch_score_count": 905,
+      "receptor_switch_score_mean": 0.3767456644147799,
+      "receptor_switch_score_median": 0.47623586654663086
+    },
+    {
+      "tissue_group": "stomach_normal",
+      "suppressive_program_score_count": 2292,
+      "suppressive_program_score_mean": 0.8950293124016453,
+      "suppressive_program_score_median": 0.7598498123148241,
+      "early_module_score_count": 2292,
+      "early_module_score_mean": 0.22459376510296047,
+      "early_module_score_median": 0.04466067613181418,
+      "late_module_score_count": 2292,
+      "late_module_score_mean": 0.9214864563193452,
+      "late_module_score_median": 0.5708869506752556,
+      "suppressive_axis_score_count": 2292,
+      "suppressive_axis_score_mean": 0.6968926912163846,
+      "suppressive_axis_score_median": 0.43975453677967535,
+      "late_regulator_score_count": 2292,
+      "late_regulator_score_mean": -0.299530440139544,
+      "late_regulator_score_median": -0.318623521592882,
+      "receptor_switch_score_count": 2292,
+      "receptor_switch_score_mean": -0.06158700166676473,
+      "receptor_switch_score_median": 0.0027623971303304407
+    },
+    {
+      "tissue_group": "stomach_tumor",
+      "suppressive_program_score_count": 15269,
+      "suppressive_program_score_mean": 1.1711895569214426,
+      "suppressive_program_score_median": 1.075895839986193,
+      "early_module_score_count": 15269,
+      "early_module_score_mean": 0.6345528676495298,
+      "early_module_score_median": 0.4479956804695775,
+      "late_module_score_count": 15269,
+      "late_module_score_mean": 0.9637953836876674,
+      "late_module_score_median": 0.7807768774814294,
+      "suppressive_axis_score_count": 15269,
+      "suppressive_axis_score_mean": 0.32924251603813737,
+      "suppressive_axis_score_median": 0.21922480030347757,
+      "late_regulator_score_count": 15269,
+      "late_regulator_score_mean": -0.7185691742582105,
+      "late_regulator_score_median": -0.7945872333314684,
+      "receptor_switch_score_count": 15269,
+      "receptor_switch_score_mean": 0.09708328944468207,
+      "receptor_switch_score_median": 0.13173739115397143
+    },
+    {
+      "tissue_group": "peritoneum_normal",
+      "suppressive_program_score_count": 85,
+      "suppressive_program_score_mean": 0.10291330231873527,
+      "suppressive_program_score_median": -0.09377836091978853,
+      "early_module_score_count": 85,
+      "early_module_score_mean": 2.3303562588753515,
+      "early_module_score_median": 2.7472306300017793,
+      "late_module_score_count": 85,
+      "late_module_score_mean": -0.304537687197409,
+      "late_module_score_median": -0.6901755286044762,
+      "suppressive_axis_score_count": 85,
+      "suppressive_axis_score_mean": -2.6348939460727605,
+      "suppressive_axis_score_median": -3.395742680764346,
+      "late_regulator_score_count": 85,
+      "late_regulator_score_mean": -0.6505266664230746,
+      "late_regulator_score_median": -0.6740123642815483,
+      "receptor_switch_score_count": 85,
+      "receptor_switch_score_mean": 0.32068746604171455,
+      "receptor_switch_score_median": 0.38445234298706077
+    }
+  ]
+}

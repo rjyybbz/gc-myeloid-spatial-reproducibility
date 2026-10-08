@@ -1,0 +1,6 @@
+No open-source license has been selected for this code release package yet.
+
+Before making a public GitHub repository final, the authors should decide whether
+to add an open-source license, such as MIT, BSD-3-Clause, Apache-2.0, GPL, or a
+more restrictive custom license. Without an explicit license, reuse rights are
+not clearly granted even if the repository is public.

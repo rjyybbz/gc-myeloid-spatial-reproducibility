@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# Large local data and generated objects
+data_raw/
+data_processed/
+*.h5
+*.h5ad
+*.rds
+*.RDS
+*.loom
+*.mtx
+*.fastq
+*.fq
+*.bam
+*.sam
+*.gz
+
+# Generated figures and logs
+figures/
+logs/
+*.log
+
+# Manuscript/submission files
+*.docx
+*.pptx
+*.pdf
+reviewer_revision_workspace*/
+submission*/
+
+# Credentials and local configuration
+.env
+*.pem
+*.key
+*token*
+*secret*
+*password*
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

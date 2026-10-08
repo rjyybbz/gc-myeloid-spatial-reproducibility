@@ -1,0 +1,8 @@
+step_id,analysis_step,primary_input,primary_output,goal
+A1,multi_cohort_inventory_and_metadata_lock,curated public datasets,dataset_inventory_and_manifest,Lock the reproducible cohort framework before formal analysis.
+A2,single_cell_myeloid_discovery,GSE206785 + GSE183904 + GSE163558,candidate_suppressive_myeloid_states,Define recurrent gastric myeloid states and identify a suppressive program.
+A3,trajectory_and_regulatory_inference,myeloid_subclusters,state_transition_and_regulon_evidence,Infer monocyte-to-suppressive-state formation logic.
+A4,cell_cell_communication_and_tcell_coupling,tumor_CAF_myeloid_Tcell_compartments,ligand_receptor_and_coupling_table,Connect the suppressive myeloid state to T-cell dysfunction and immune exclusion.
+A5,spatial_niche_localization,GSE270678 + GSE270680,spatial_enrichment_and_colocalization_metrics,Place the suppressive myeloid program into a spatial niche.
+A6,treatment_linked_validation,GSE315928 + GSE229379,treatment_association_support,Test whether the program associates with unfavorable treatment-linked immune states.
+A7,bulk_transfer_and_extension,TCGA_STAD + GSE62254 + GSE84437 + optional_GSE183136,bulk_score_and_external_context,Transfer the single-cell program into bulk cohorts without overclaiming immunotherapy proof.
