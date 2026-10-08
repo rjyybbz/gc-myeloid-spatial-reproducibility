@@ -71,7 +71,7 @@ def build_analysis_plan() -> list[dict]:
             "analysis_step": "cell_cell_communication_and_tcell_coupling",
             "primary_input": "tumor_CAF_myeloid_Tcell_compartments",
             "primary_output": "ligand_receptor_and_coupling_table",
-            "goal": "Connect the suppressive myeloid state to T-cell dysfunction and immune exclusion."
+            "goal": "Assess how the suppressive-like myeloid state relates to T-cell dysfunction and lower lymphoid/TLS-related signals."
         },
         {
             "step_id": "A5",
@@ -121,7 +121,7 @@ def build_figure_plan() -> list[dict]:
             "figure_id": "Figure 4",
             "working_title": "Tumor-myeloid-T cell communication links the state to dysfunction",
             "data_source": "single-cell discovery cohorts",
-            "main_message": "Connect the myeloid state to T-cell exhaustion and immune exclusion."
+            "main_message": "Relate the myeloid state to T-cell dysfunction and lower lymphoid/TLS-related signals."
         },
         {
             "figure_id": "Figure 5",

@@ -335,7 +335,7 @@ def main() -> None:
         "interpretation": [
             "The suppressive myeloid program is expected to be spatially separated from TLS-core ecology, not merely from bulk T-cell abundance.",
             "Negative suppressive-program versus TLS chemokine and TLS B-cell/FDC-core correlations support within-sample antagonism between myeloid suppression and lymphoid aggregation.",
-            "Depleted TLS-core neighbors around suppressive hotspots support a spatial immune-exclusion model centered on loss of lymphoid-aggregated ecology.",
+            "Lower TLS-related B-cell/FDC-core neighbors around suppressive hotspots support a spatial immune-contexture pattern centered on reduced lymphoid-core signal.",
         ],
     }
     write_json(outdir / "GSE270678_tls_exclusion_summary.json", summary)

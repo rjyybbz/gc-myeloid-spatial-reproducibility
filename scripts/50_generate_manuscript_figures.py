@@ -966,7 +966,7 @@ def plot_neighbor_effects(ax: plt.Axes, niche_summary: pd.DataFrame, tls_summary
     combined = pd.concat(
         [
             niche_summary.assign(source="Primary spatial"),
-            tls_summary.assign(source="TLS exclusion"),
+            tls_summary.assign(source="TLS-related low core"),
         ],
         ignore_index=True,
     )
@@ -2086,7 +2086,7 @@ def plot_working_model(ax: plt.Axes) -> None:
     for cx, cy in [(0.17, 0.305), (0.16, 0.215), (0.205, 0.325), (0.285, 0.19)]:
         ax.add_patch(Circle((cx, cy), 0.012, transform=ax.transAxes, facecolor=COLORS["caf"], edgecolor="white", linewidth=0.6))
     ax.add_patch(FancyArrowPatch((0.27, 0.255), (0.315, 0.248), transform=ax.transAxes, arrowstyle="-", linestyle="--", linewidth=1.6, color="#7B8794"))
-    ax.text(0.292, 0.275, "TLS exclusion", transform=ax.transAxes, fontsize=8.0, color="#6D7783", ha="center")
+    ax.text(0.292, 0.275, "Low TLS-core", transform=ax.transAxes, fontsize=8.0, color="#6D7783", ha="center")
 
     draw_round_box(ax, peritoneal_xywh, edgecolor=COLORS["peritoneum"], facecolor="#FDFCFA", linewidth=1.5, rounding=0.025)
     draw_chip(ax, (0.63, 0.39, 0.07, 0.028), "E07-E08", facecolor=COLORS["peritoneum"], fontsize=7.5)

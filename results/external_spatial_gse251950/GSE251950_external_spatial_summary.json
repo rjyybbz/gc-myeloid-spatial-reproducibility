@@ -101,7 +101,7 @@
   "interpretation": [
     "GSE251950 provides an independent external spatial validation layer for the CAF-rich suppressive niche.",
     "Across samples, suppressive-program scores reproducibly couple with CAF activation and CAF-myeloid input features, supporting external stromal coupling of the program.",
-    "TLS-related signals are weak-to-null rather than externally reproducing a clean TLS-core exclusion pattern in this cohort, so the TLS-exclusion claim should remain anchored in GSE270678.",
+    "TLS-related signals are weak-to-null rather than externally reproducing a clear TLS-related B-cell/FDC-core-low pattern in this cohort, so the spatial TLS-related interpretation should remain anchored in GSE270678.",
     "The GC6 versus GC6-PM pair provides a spatially matched supportive peritoneal extension, but should be framed as paired supportive evidence rather than a cohort-level metastasis test."
   ]
 }

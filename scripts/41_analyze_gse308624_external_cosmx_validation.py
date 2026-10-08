@@ -234,7 +234,7 @@ def main() -> None:
         "interpretation": [
             "GSE308624 provides an independent external cell-resolved spatial validation layer for the CAF-coupled suppressive macrophage niche.",
             "Across samples, macrophage suppressive burden tracks fibroblast CAF activation, and high-suppressive macrophages are surrounded by more fibroblast and high-CAF fibroblast neighbors.",
-            "At the same time, high-suppressive macrophages show fewer nearby B cells and fewer nearby TLS-like high B-cell neighbors, supporting an external lymphoid-exclusion layer at cellular neighborhood resolution.",
+            "At the same time, high-suppressive macrophages show fewer nearby B cells and fewer nearby TLS-like high B-cell neighbors, supporting an external lower-B-cell-proximity layer at cellular neighborhood resolution.",
         ],
     }
     write_json(outdir / "GSE308624_external_cosmx_summary.json", summary)

@@ -302,7 +302,7 @@ def main() -> None:
         "cross_dataset_interpretation": [
             "Across both TCGA-STAD and GSE84437, the burden_high__polar_low group shows the highest stromal-adaptive imbalance.",
             "This worst dual-axis group is characterized by higher CAF/TGFb context together with lower Teff/IFNg/TLS-like context than burden_high__polar_high.",
-            "Bulk ecology therefore supports a stromal-high, adaptive-low background for the clinically unfavorable suppressive-burden state, rather than being used as a direct substitute for spatial TLS exclusion.",
+            "Bulk ecology therefore supports a stromal-high, adaptive-low background for the clinically unfavorable suppressive-burden state, rather than being used as a direct substitute for spatial TLS-related B-cell/FDC-core-low evidence.",
         ],
     }
     (outdir / "bulk_ecology_context_summary.json").write_text(
